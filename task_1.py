@@ -139,6 +139,7 @@ llist.insert_at_end(4)
 print("Оригінальний список:")
 llist.print_list()
 
+# Приклад сортування списку
 llist.merge_sort()
 print("Відсортований список:")
 llist.print_list()
@@ -161,6 +162,7 @@ merged_list.head = merged_head
 print("Об'єднаний відсортований список:")
 merged_list.print_list()
 
+# Приклад реверсування однозв'язного списку
 merged_list.reverse()
 print("Реверсування однозв'язного списку")
 merged_list.print_list()
