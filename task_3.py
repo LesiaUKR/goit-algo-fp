@@ -65,7 +65,7 @@ if __name__ == "__main__":
 
     fig, ax = plt.subplots(figsize=(10, 10))
 
-    # Відображення графа на карті
+    # Відображення графа 
     nx.draw(G, positions, with_labels=True, node_size=500, node_color='yellow', font_size=10, edge_color='blue', ax=ax)
 
     # Додавання міток з відстанями
