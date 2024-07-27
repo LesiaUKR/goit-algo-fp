@@ -38,7 +38,11 @@ def draw_tree(tree_root):
     nx.draw(tree, pos=pos, labels=labels, arrows=False, node_size=2500, node_color=colors)
     plt.show()
 
-def build_max_heap(arr):
+def build_tree_from_heap(arr):
+
+    if not arr:
+        return None
+
     # Інвертуємо значення для побудови мінімальної купи
     arr = [-i for i in arr]
     
@@ -57,12 +61,15 @@ def build_max_heap(arr):
     
     return nodes[0]
 
-# Масив для побудови бінарної купи
-arr = [10, 9, 8, 7, 6, 5, 4]
 
 # Побудова та відображення дерева з купи
-heap_root = build_max_heap(arr)
-draw_tree(heap_root)
+def main():
+    arr = [10, 3, 8, 7, 6, 5, 4,1]
+    root = build_tree_from_heap(arr)
+    draw_tree(root)
+
+if __name__ == "__main__":
+    main()
 
 
 
