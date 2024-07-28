@@ -63,15 +63,15 @@ class LinkedList:
 
    # Реверс списку
    def reverse(self):
-        prev = None  # Ініціалізуємо попередній вузол як None
-        current = self.head  # Починаємо з голови списку
-        while current:  # Поки не дійдемо до кінця списку
-            next_node = current.next  # Зберігаємо посилання на наступний вузол
-            current.next = prev  # Розвертаємо поточний вузол
-            prev = current  # Зміщуємо попередній вузол до поточного
-            current = next_node  # Зміщуємо поточний вузол до наступного
-        self.head = prev  # Оновлюємо голову списку
-
+        prev = None  
+        current = self.head 
+        while current: 
+            next_node = current.next  
+            current.next = prev 
+            prev = current  
+            current = next_node  
+        self.head = prev 
+        
     # Сортування злиттям списку
    def merge_sort(self):
         if not self.head or not self.head.next:  # Якщо список порожній або має один елемент
